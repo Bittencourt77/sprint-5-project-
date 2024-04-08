@@ -5,7 +5,7 @@ import streamlit as st
 st.header('Dashboard de Anúncios de Carros')
 
 car_data = pd.read_csv('vehicles.csv') # lendo os dados
-build_histogram = st.st.button('Criar um histograma') # criar botão de seleção para histograma
+build_histogram = st.button('Criar um histograma') # criar botão de seleção para histograma
 build_scatter = st.checkbox('Criar um gráfico de dispersão') # criar uma caixa de seleção para gráfico de dispersão
 
 if build_histogram: # se a caixa de seleção de histograma estiver marcada
